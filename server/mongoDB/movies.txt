@@ -1,0 +1,156 @@
+use cinema
+
+db.createCollection("movies");
+
+db.movies.insertMany([
+    {
+        "title": "Avatar",
+        "year": "2009",
+        "rated": "PG-13",
+        "released": new Date("2009-12-18"),
+        "runtime": "162 min",
+        "genre": "Action, Adventure, Fantasy",
+        "director": "James Cameron",
+        "actors": "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
+        "plot": "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNjA3NGExZDktNDlhZC00NjYyLTgwNmUtZWUzMDYwMTZjZWUyXkEyXkFqcGdeQXVyMTU1MDM3NDk0._V1_.jpg",
+        "showtime": [
+            {
+                "days" : ["Monday"],
+                "times" : ["13:00", "15:00", "18:00"]
+            }
+        ],
+        "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY?autoplay=1"
+    },
+    {
+        "title": "I Am Legend",
+        "year": "2007",
+        "rated": "PG-13",
+        "released": new Date("2007-12-14"),
+        "runtime": "101 min",
+        "genre": "Drama, Horror, Sci-Fi",
+        "director": "Francis Lawrence",
+        "actors": "Will Smith, Alice Braga, Charlie Tahan, Salli Richardson-Whitfield",
+        "plot": "years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure.",
+        "poster": "https://m.media-amazon.com/images/M/MV5BYTE1ZTBlYzgtNmMyNS00ZTQ2LWE4NjEtZjUxNDJkNTg2MzlhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+        "showtime": [
+            {
+                "days" : ["Tuesday"],
+                "times" : ["14:00", "16:00", "19:00"]
+            }
+        ],
+        "trailer": "https://www.youtube.com/embed/dtKMEAXyPkg?autoplay=1"
+    },
+    {
+        "title": "300",
+        "year": "2006",
+        "rated": "R",
+        "released": new Date("2007-03-09"),
+        "runtime": "117 min",
+        "genre": "Action, Drama, Fantasy",
+        "director": "Zack Snyder",
+        "actors": "Gerard Butler, Lena Headey, Dominic West, David Wenham",
+        "plot": "King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNWMxYTZlOTUtZDExMi00YzZmLTkwYTMtZmM2MmRjZmQ3OGY4XkEyXkFqcGdeQXVyMTAwMzUyMzUy._V1_FMjpg_UX1000_.jpg",
+        "showtime": [
+            {
+                "days" : ["Wednesday"],
+                "times" : ["12:00", "14:00", "17:00"]
+            }
+        ],
+        "trailer": "https://www.youtube.com/embed/UrIbxk7idYA?autoplay=1"
+    },
+    {
+        "title": "The Avengers",
+        "year": "2012",
+        "rated": "PG-13",
+        "released": new Date("2012-05-04"),
+        "runtime": "143 min",
+        "genre": "Action, Sci-Fi, Thriller",
+        "director": "Joss Whedon",
+        "actors": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+        "plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+        "showtime": [
+            {
+                "days" : ["Thursday"],
+                "times" : ["13:00", "15:00", "18:00"]
+            }
+        ],
+        "trailer": "https://www.youtube.com/embed/eOrNdBpGMv8?autoplay=1"
+    },
+    {
+        "title": "The Wolf of Wall Street",
+        "year": "2013",
+        "rated": "R",
+        "released": new Date("2013-12-25"),
+        "runtime": "180 min",
+        "genre": "Biography, Comedy, Crime",
+        "director": "Martin Scorsese",
+        "actors": "Leonardo DiCaprio, Jonah Hill, Margot Robbie, Matthew McConaughey",
+        "plot": "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_.jpg",
+        "showtime": [
+            {
+                "days" : ["Friday", "Sunday"],
+                "times" : ["13:00", "17:00", "20:00"]
+            }
+        ],
+        "trailer": "https://www.youtube.com/embed/iszwuX1AK6A?autoplay=1"
+    },
+    {
+        "title": "Avatar: The Way Of The Water",
+        "year": "2022",
+        "released": new Date("2022-12-16"),
+        "genre": "Action, Fantasy, Science Fiction",
+        "director": "James Cameron",
+        "actors": "Kate Winslet, Giovanni Ribisi, Stephen Lang, Cliff Curtis, Sam Worthington, Oona Chaplin",
+        "plot": "Set more than a decade after the events of the first film, AVATAR 2 begins to tell the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive and the tragedies they endure.",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMWFmYmRiYzMtMTQ4YS00NjA5LTliYTgtMmM3OTc4OGY3MTFkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg",
+        "trailer" : "https://www.youtube.com/embed/NZrX_ES93JA?autoplay=1"
+    },
+    {
+        "title": "Black Panther: Wakanda Forever",
+        "year": "2022",
+        "released": new Date("2022-11-11"),
+        "genre": "Action, Drama, Science Fiction",
+        "director": "Ryan Coogler",
+        "actors": "Lupita Nyong'o, Tenoch Huerta, Martin Freeman, Winston Duke, Michaela Coel",
+        "plot": "Wakanda fight to protect their nation from intervening world powers in the wake of King T’Challa’s death. As the Wakandans strive to embrace their next chapter, the heroes must band together and forge a new path for the kingdom of Wakanda.",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNjMxZmI4NzEtYWNjOS00M2MwLWE4YTctMjk1YWEzOTY1NjkwXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg",
+        "trailer" : "https://www.youtube.com/embed/RlOB3UALvrQ?autoplay=1"
+    },
+    {
+        "title": "Black Adam",
+        "year": "2022",
+        "released": new Date("2022-10-21"),
+        "genre": "Action, Sci-Fi",
+        "director": "Jaume Collet-Serra",
+        "actors": "Dwayne Johnson, Sarah Shahi, Mohammed Amer",
+        "plot": "Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods-and imprisoned just as quickly-Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNmEwODNmOTYtMWRmYS00ZTEzLWJmNTAtMWQ4OWVlMzU0MWIyXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
+        "trailer" : "https://www.youtube.com/embed/X0tOpBuYasI?autoplay=1"
+    },
+    {
+        "title": "Ticket to Paradise",
+        "year": "2022",
+        "released": new Date("2022-09-21"),
+        "genre": "Comedy, Romance",
+        "director": "Ol Parker",
+        "actors": "Lucas Bravo, Kaitlyn Dever, Julia Roberts, George Clooney, Billie Lourd",
+        "plot": "A divorced couple that teams up and travels to Bali to stop their daughter from making the same mistake they think they made 25 years ago.",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMWE0MmEwMWUtZjRjOC00YzE3LWI2MjctNjc3NWQ0YTVmNDQ4XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg",
+        "trailer" : "https://www.youtube.com/embed/hkP4tVTdsz8?autoplay=1"
+    },
+    {
+        "title": "Inu-Oh (Subbed)",
+        "year": "2022",
+        "released": new Date("2022-09-28"),
+        "genre": "Animation, Musical",
+        "director": "Masaaki Yuasa",
+        "actors": "Avu-chan(voice), Mirai Moriyama(voice), Tasuku Emoto(voice)",
+        "plot": "A cursed dancer and a musician stun society with electrifying concerts in this animated rock opera.",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTk5MDA1ZTQtMGZlMi00OTJmLThlZjEtMjNlZmFkYWRiNmY5XkEyXkFqcGdeQXVyMTY3OTcwMzk@._V1_.jpg",
+        "trailer" : "https://www.youtube.com/embed/cDtY5LSWZns?autoplay=1"
+    }
+])

@@ -1,0 +1,24 @@
+use cinema
+
+db.createCollection("bookings");
+
+db.bookings.insertMany([
+    {
+        "firstName" : "John",
+        "lastName" : "Smith",
+        "adultTickets" : 2,
+        "childrenTickets" : 2,
+        "concession" : 2,
+        "price" : 32.99,
+        "movieBooking" : [{
+            "movie" : "Avatar",
+            "day" : "Tuesday",
+            "time" : "18:00"
+        }],
+        "payment" : [{
+            "cardNumber" : 1234567890987654,
+            "expiringDate" : "12/27",
+            "cvv" : 123
+        }]
+    }
+])

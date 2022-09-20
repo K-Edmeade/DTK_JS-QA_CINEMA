@@ -1,38 +1,348 @@
-.App {
+/*html*/
+html {
+  height: 100%
+}
+
+/*Body*/
+body {
+  background-image: linear-gradient(180deg, rgb(31 0 127), rgb(88 33 240));
+  color: #bdbdbd !important;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Bootstrap Navbar-Nav */
+.navbar-nav {
+  --bs-nav-link-color: #bdbdbd !important;
+}
+
+.dropdown-menu-dark {
+  --bs-dropdown-bg: rgb(29 7 42) !important;
+  outline: #bdbdbd 1px solid;
+}
+
+/* Navbas */
+.navbar {
+  background-color: rgb(29 7 42);
+  --bs-navbar-hover-color: rgb(100 0 73) !important;
+  --bs-active-color: rgb(100 0 73) !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+  color: rgb(100 0 73) !important;
+}
+
+/* Footer */
+.footer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+
+
+
+.classification-top-row {
+  margin-right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+
+
+}
+
+/* Popup */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  width: 100%;
+  max-width: 560px;
+  max-height: 315px;
+  background-color: #FFF;
+}
+
+.popup-inner .close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+/*Modal*/
+
+.modal-content {
+  background-color: rgb(29 7 42) !important;
+  margin-top: 40% !important;
+}
+
+/*BookingConfirmation*/
+
+.confirmationContainer {
+  color: #bdbdbd !important;
+  margin: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.confirmationSubContainer {
+  box-shadow: 0px 0px 15px rgb(0 0 0), inset 0px 0px 15px 0px rgb(70 70 70 / 12%);
+  background-color: rgb(29 7 42);
+  border-radius: 15px;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 60%;
+  height: auto;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Booking */
+#bookingContainer {
+  margin-top: 70px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 15px rgb(0 0 0), inset 0px 0px 15px 0px rgb(70 70 70 / 12%);
+  padding: 30px;
+  border-radius: 30px;
+  background-color: rgb(29 7 42 / 80%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Buttons */
+.btn-primary {
+  --bs-btn-bg: rgb(162 0 73) !important;
+  --bs-btn-border-color: rgb(162 0 73) !important;
+  --bs-btn-hover-bg: rgb(162 0 73) !important;
+  --bs-btn-hover-border-color: rgb(162 0 73) !important;
+  --bs-btn-active-bg: rgb(162 0 73) !important;
+  --bs-btn-active-border-color: rgb(162 0 73) !important;
+  --bs-btn-disabled-bg: rgb(162 0 73) !important;
+  --bs-btn-disabled-border-color: rgb(162 0 73) !important;
+}
+
+.btn-outline-success {
+  --bs-btn-color: rgb(162 0 73) !important;
+  --bs-btn-border-color: rgb(162 0 73) !important;
+  --bs-btn-hover-bg: rgb(162 0 73) !important;
+  --bs-btn-hover-border-color: rgb(162 0 73) !important;
+  --bs-btn-active-bg: rgb(162 0 73) !important;
+  --bs-btn-active-border-color: rgb(162 0 73) !important;
+  --bs-btn-disabled-color: rgb(162 0 73) !important;
+  --bs-btn-disabled-border-color: rgb(162 0 73) !important;
+}
+
+/*Table*/
+.table {
+  --bs-table-color: white !important;
+  border-color: white !important;
+}
+
+
+/* Carousel */
+.carousel.slide {
+  box-shadow: 0px 0px 15px rgb(0 0 0), inset 0px 0px 15px 0px rgb(70 70 70 / 12%);
+  border-radius: 30px;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+
+.carousel-inner {
+  border-radius: 30px;
+}
+
+/*Listing div*/
+#film-container {
+  padding-bottom: 5%;
+}
+
+#film-container>.card {
+  background-color: rgb(29 7 42) !important;
+  color: #bdbdbd !important;
+  box-shadow: 0px 0px 15px rgb(0 0 0), inset 0px 0px 15px 0px rgb(70 70 70 / 12%);
+}
+
+.list-group {
+  --bs-list-group-color: #bdbdbd !important;
+  --bs-list-group-bg: rgb(29 7 42) !important;
+}
+
+
+/* about page */
+
+.aboutDiv{
+  min-width: 10vh;
+  width: 35%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(29 7 42);
+  padding: 3rem 3rem;
+  border-radius: 2rem;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  box-shadow: 0px 0px 15px rgb(0 0 0), inset 0px 0px 15px 0px rgb(70 70 70 / 12%);
+  display: inline-block;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.aboutDivGroup{
+  
+  margin-bottom: 10px;
+  text-align: center;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scrumDiv{
+  margin-right: 0%;
+  margin-bottom: 5%;
+  text-align: center;
+
 }
+
+.aboutCard{
+padding-top: 1rem;
+line-height: 150%;
+padding: left 5rem; ;
+}
+.aboutCard>motion.div{
+  width: 5rem;
+}
+
+/* Discussion */
+
+.discussionContainer {
+  display: flex;
+  padding-bottom: 5%;
+}
+
+.discussionFormContrainer {
+  box-shadow: 0px 0px 15px rgb(0 0 0), inset 0px 0px 15px 0px rgb(70 70 70 / 12%);
+  width: 30%;
+  margin: 30px;
+  height: fit-content;
+  padding: 30px;
+  background-color: rgb(29 7 42);
+  border-radius: 10px;
+}
+
+.disscussionListContainer {
+
+  width: 60%;
+  margin: 10px;
+}
+
+.disscussionListContainer>.list-group {
+  box-shadow: 0px 0px 15px rgb(0 0 0), inset 0px 0px 15px 0px rgb(70 70 70 / 12%);
+  border-radius: 10px;
+  margin: 10px
+}
+
+/*Classifications*/
+
+.classificationContainer {
+  margin: 5%;
+}
+
+.classificationContainer>.card {
+  box-shadow: 0px 0px 15px rgb(0 0 0), inset 0px 0px 15px 0px rgb(70 70 70 / 12%);
+  background-color: rgb(29 7 42);
+  color: #bdbdbd;
+}
+
+/*Opening Times*/
+.openingTimesContainer{
+  margin-top:5%;
+  margin-bottom:5%;
+  display: flex;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.openingTimesContainer > .card{
+  height: fit-content;
+  box-shadow: 0px 0px 15px rgb(0 0 0), inset 0px 0px 15px 0px rgb(70 70 70 / 12%);
+  background-color: rgb(29 7 42);
+  color: #bdbdbd;
+}
+
+/*Directions*/
+
+.directionsContainer{
+  margin:20px;
+  display: flex;
+}
+
+.directionsMapContainer{
+  box-shadow: 0px 0px 15px rgb(0 0 0), inset 0px 0px 15px 0px rgb(70 70 70 / 12%);
+  background-color: rgb(29 7 42);
+  border-radius: 10px;
+  width:50%;
+  margin:20px;
+  padding: 10px;
+}
+
+.directionsAddressContainer{
+  box-shadow: 0px 0px 15px rgb(0 0 0), inset 0px 0px 15px 0px rgb(70 70 70 / 12%);
+  background-color: rgb(29 7 42);
+  border-radius: 10px;
+  width:50%;
+  margin:20px;
+  padding: 20px;
+  height: -webkit-fill-available;
+}
+
+.directionsParkingContainer{
+  box-shadow: 0px 0px 15px rgb(0 0 0), inset 0px 0px 15px 0px rgb(70 70 70 / 12%);
+  background-color: rgb(29 7 42);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  margin-bottom: 5%;
+}
+
+
+/*Contact Us*/
+.contactContainer{
+  display:flex;
+  margin:20px;
+}
+
+.contactAddressContainer{
+  box-shadow: 0px 0px 15px rgb(0 0 0), inset 0px 0px 15px 0px rgb(70 70 70 / 12%);
+  background-color: rgb(29 7 42);
+  border-radius: 10px;
+  width:30%;
+  margin:20px;
+  padding: 30px;
+  height: -webkit-fill-available;
+}
+
+.contactEmailContainer{
+  box-shadow: 0px 0px 15px rgb(0 0 0), inset 0px 0px 15px 0px rgb(70 70 70 / 12%);
+  background-color: rgb(29 7 42);
+  border-radius: 10px;
+  width:60%;
+  margin:20px;
+  padding: 30px;
+}
+

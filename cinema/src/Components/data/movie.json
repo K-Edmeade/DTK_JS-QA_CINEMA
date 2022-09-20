@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "Commenter43",
+        "comment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit ac mi vitae egestas. Vivamus tincidunt at velit nec scelerisque. Quisque et laoreet odio. Mauris faucibus finibus libero sit amet.",
+        "movie" : "Avatar",
+        "rating" : 8
+    },
+    {
+        "name" : "cinemaViewer21",
+        "comment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae mi tincidunt elit lobortis sodales eu at orci. Pellentesque faucibus consequat neque sed dictum. Curabitur feugiat nisl diam. Praesent in risus nunc. Mauris eget metus nulla. Duis dui magna, vehicula eget risus sit.",
+        "movie" : "300",
+        "rating" : 7
+    },
+    {
+        "name" : "Amongus675",
+        "comment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in.",
+        "movie" : "The Avengers",
+        "rating" : 10
+    },
+    {
+        "name" : "MovieH8Tr",
+        "comment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin pulvinar metus, ut sollicitudin sem fermentum et. Proin tempor, dolor sit amet pretium tristique, nisi libero blandit enim, et posuere elit diam sed nunc. Morbi fringilla euismod velit, sit amet pellentesque ante tincidunt vitae. Phasellus lacinia lectus non lacus accumsan sodales a id ante. Quisque et dignissim est, non feugiat elit. Nulla non rhoncus magna. Curabitur lobortis libero eu lorem consectetur, vel mollis arcu condimentum. Nam risus enim, accumsan eget varius eget, pretium vel urna. Nunc vestibulum consectetur tortor, eu blandit sapien malesuada vitae. \n Nam vitae vestibulum eros. Aenean commodo nunc id libero ultrices, nec ultricies nulla dapibus. Fusce non vehicula enim, eget sollicitudin quam. Vestibulum sed convallis ipsum. Maecenas vitae accumsan ligula. Morbi nec lorem condimentum, hendrerit orci sed, eleifend libero. Praesent sit amet sapien sit amet augue imperdiet congue. Nulla suscipit lobortis varius. Aliquam cursus ullamcorper arcu, eu consequat purus venenatis et. Quisque pretium nec felis eget hendrerit. Integer viverra urna eu feugiat elementum. Mauris massa libero, auctor vitae nibh non, lobortis viverra enim. Donec volutpat nisl quis dui semper commodo nec vitae neque. Vivamus a nibh urna. Phasellus ut augue diam. Etiam hendrerit, tellus in consectetur auctor.",
+        "movie" : "I Am Legend",
+        "rating" : 2
+    }   
+]
